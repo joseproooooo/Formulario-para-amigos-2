@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario para amigos</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #d32f2f;
+            text-align: center;
+            margin-top: 30px;
+        }
+        form {
+            background: #fff;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        label {
+            color: #333;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            padding: 12px 0;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #b71c1c;
+        }
+        h3 {
+            color: #1976d2;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Formulario Para Amigos </h1>
+    <form action="https://formsubmit.co/jaag00654d@gmail.com" method="post">
+        <label for="Nombre">Nombre y Apellido:</label><br><br>
+        <input type="text" id="Nombre" name="nombre" required placeholder="José Alcalá"/><br><br>
+
+        <label for="Edad">Edad:</label><br>
+        <input type="number" id="Edad" name="edad" required placeholder="18"  min="7"max="99"/><br><br>
+            <h3>¿Me Quieres Hacer una pregunta?</h3>
+        <label for="Pregunta">Tu pregunta:</label>
+        <br><br>
+        <input type="text" id="pregunta" name="pregunta" placeholder="¿Qué es la vida para ti?"/><br><br>
+
+        <label for="Como_me_conociste">¿Como me conociste?</label>
+        <br><br>
+        <input type="text" id="Como_me_conociste" name="Como_me_conociste" placeholder="Che Nose, tu dime"><br><br>
+        <label for="Comentario">Deja tu comentario/Frase:</label><br><br>
+        <textarea id="Comentario" name="Comentario" rows="4" cols="50" placeholder="Chamo tenemos que hacer una salida"></textarea>
+        </textarea><br><br>
+
+        <input type="submit" value="Enviar"/>
+
+
+
+
+
+    </form>
+
+</body>
+</html>
